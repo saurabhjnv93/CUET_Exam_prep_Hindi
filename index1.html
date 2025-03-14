@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 12 PCM Video Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #E3F2FD; /* Soft blue background for the body */
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+            color: #1976D2; /* Dark blue for headings */
+        }
+        h1 {
+            background-color: #BBDEFB; /* Light blue background for the main heading */
+            padding: 15px;
+            border-radius: 10px;
+        }
+        h2 {
+            background-color: #C8E6C9; /* Light green background for subheadings */
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            background-color: #F5F5F5; /* Light gray background for list items */
+            margin: 5px 0;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+        li:hover {
+            background-color: #E0E0E0; /* Slightly darker gray on hover */
+        }
+        a {
+            text-decoration: none;
+            color: #0D47A1; /* Dark blue for links */
+            font-weight: bold;
+            flex-grow: 1;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #1565C0; /* Slightly lighter blue on hover */
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+                padding: 15px;
+            }
+            h1, h2 {
+                font-size: 1.5em;
+            }
+            li {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Exam_Prep :: 2025</h1>
+        
+        <h2>📘 Physics</h2>
+        <ul id="physics-list">
+            <!-- Physics chapters will be dynamically populated here -->
+        </ul>
+
+        <h2>🧪 Chemistry</h2>
+        <ul id="chemistry-list">
+            <!-- Chemistry chapters will be dynamically populated here -->
+        </ul>
+
+        <h2>📏 Mathematics</h2>
+        <ul id="mathematics-list">
+            <!-- Mathematics chapters will be dynamically populated here -->
+        </ul>
+    </div>
+
+    <script>
+        // Data for chapters
+        const chapters = {
+            physics: [
+                { title: "Chapter 1: Electric Charges and Fields", link: "https://www.youtube.com/watch?v=of4UW6BUEyE&t=7254s&ab_channel=UPBoardHindiMedium-Vidyakul" },
+                { title: "Chapter 2: Electrostatic Potential and Capacitance", link: "https://www.youtube.com/watch?v=vFRIMzuIzD4&ab_channel=SymbiosisSET" },
+                { title: "Chapter 3: Current Electricity", link: "https://www.youtube.com/watch?v=XuGJlB5balU&ab_channel=UPBoardHindiMedium-Vidyakul" },
+                { title: "Chapter 4: Moving Charges and Magnetism", link: "https://www.youtube.com/watch?v=BFFYp8dAJy4&ab_channel=HeyGen" },
+                { title: "Chapter 6: Electromagnetic Induction", link: "https://www.youtube.com/watch?v=imvQcl42l0c&ab_channel=ashishsinghlectures" },
+                { title: "Chapter 7: Alternating Current", link: "https://www.youtube.com/watch?v=P1DineCUZbw&ab_channel=DataCamp" },
+                { title: "Chapter 8: Electromagnetic Waves", link: "https://www.youtube.com/watch?v=P1DineCUZbw&t=2420s&ab_channel=ashishsinghlectures" },
+                { title: "Chapter 9: Ray Optics and Optical Instruments", link: "https://www.youtube.com/watch?v=a3usWGdnY44&ab_channel=HeyGen" },
+                { title: "Chapter 10: Wave Optics", link: "https://www.youtube.com/watch?v=3RhVrWNhN60&ab_channel=ashishsinghlectures" },
+                { title: "Chapter 11: Dual Nature of Radiation and Matter", link: "https://www.youtube.com/watch?v=KqNf7Q8d7Tg&ab_channel=ashishsinghlectures" },
+                { title: "Chapter 12: Atoms", link: "https://www.youtube.com/watch?v=yIlkZb6f48Y&ab_channel=DataCamp" },
+                { title: "Chapter 13: Nuclei", link: "https://www.youtube.com/watch?v=b7cjUCY9G7Q&ab_channel=PW-HindiMedium" },
+                { title: "Chapter 14: Semiconductor Electronics", link: "https://www.youtube.com/watch?v=sGGf9vEsCbU&ab_channel=ashishsinghlectures" }
+            ],
+            chemistry: [
+                { title: "Chapter 2: Solutions", link: "https://www.youtube.com/watch?v=HB_ga0p9ihI&ab_channel=NEETWallah%E0%A4%B9%E0%A4%BF%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A5%80%E0%A4%AE%E0%A4%BE%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%AE" },
+                { title: "Chapter 3: Electrochemistry", link: "https://www.youtube.com/watch?v=eaLhEnsvO-k&t=5199s&ab_channel=UPBoardHindiMedium-Vidyakul" },
+                { title: "Chapter 4: Chemical Kinetics", link: "https://www.youtube.com/watch?v=yYmG6ukHSmo&ab_channel=PW-HindiMedium" },
+                { title: "Chapter 8: The d- and f-Block Elements", link: "https://www.youtube.com/watch?v=XBm7JpE8T_8&ab_channel=HeyGen" },
+                { title: "Chapter 9: Coordination Compounds", link: "https://www.youtube.com/watch?v=TIw4PfgBy_Q&ab_channel=HeyGen" },
+                { title: "Chapter 10: Haloalkanes and Haloarenes", link: "https://www.youtube.com/watch?v=7MdK-jZvJZo&ab_channel=HeyGen" },
+                { title: "Chapter 11: Alcohols, Phenols and Ethers", link: "https://www.youtube.com/watch?v=NhSpkX-SoS0&ab_channel=UPBoardHindiMedium-Vidyakul" },
+                { title: "Chapter 12: Aldehydes, Ketones and Carboxylic Acids", link: "https://www.youtube.com/watch?v=IQUvUEpEZAM&ab_channel=UPBoardHindiMedium-Vidyakul" },
+                { title: "Chapter 13: Organic Compounds Containing Nitrogen", link: "https://www.youtube.com/watch?v=Sj_CLkBQswM&ab_channel=UPBoardHindiMedium-Vidyakul" },
+                { title: "Chapter 14: Biomolecules", link: "https://www.youtube.com/watch?v=f4LpAz_fknw&ab_channel=UPBoardHindiMedium-Vidyakul" }
+            ],
+            mathematics: [
+                { title: "Chapter 1: Relations and Functions", link: "https://www.youtube.com/watch?v=INW0CBQoCQc&ab_channel=Apple" },
+                { title: "Chapter 2: Inverse Trigonometric Functions", link: "https://www.youtube.com/watch?v=SqT7-meV5nM&ab_channel=Apple" },
+                { title: "Chapter 3: Matrices", link: "https://www.youtube.com/watch?v=vHAxHp_B67E&ab_channel=HeyGen" },
+                { title: "Chapter 4: Determinants", link: "https://www.youtube.com/watch?v=eibcMjqA_cg&ab_channel=PW%28PhysicsWallah%29" },
+                { title: "Chapter 5: Continuity and Differentiability", link: "https://www.youtube.com/watch?v=pP8KS_3j5sc&ab_channel=HeyGen" },
+                { title: "Chapter 6: Application of Derivatives", link: "https://www.youtube.com/watch?v=3nkjG3kuPnU&ab_channel=ashishsinghlectures" },
+                { title: "Chapter 7: Integrals", link: "https://www.youtube.com/watch?v=wk6BqVyc6fY&ab_channel=ashishsinghlectures" },
+                { title: "Chapter 8: Application of Integrals", link: "https://www.youtube.com/watch?v=RY9ghgE6Nc0&ab_channel=HeyGen" },
+                { title: "Chapter 9: Differential Equations", link: "https://www.youtube.com/watch?v=PdDBN8ffXf8&ab_channel=PW%28PhysicsWallah%29" },
+                { title: "Chapter 10: Vector Algebra", link: "https://www.youtube.com/watch?v=e7dBeIfHzbQ&ab_channel=PW%28PhysicsWallah%29" },
+                { title: "Chapter 11: Three Dimensional Geometry", link: "https://www.youtube.com/watch?v=3AP_qqUEHIY&ab_channel=PW%28PhysicsWallah%29" },
+                { title: "Chapter 12: Linear Programming", link: "https://www.youtube.com/watch?v=Rt9_Hjkb5E0&ab_channel=DishaScienceClasses" },
+                { title: "Chapter 13: Probability", link: "https://www.youtube.com/watch?v=nMMfFvgGsUI&ab_channel=PW%28PhysicsWallah%29" }
+            ]
+        };
+
+        // Function to render chapters with checkboxes
+        function renderChapters(subject, listId) {
+            const list = document.getElementById(listId);
+            list.innerHTML = ""; // Clear existing content
+
+            chapters[subject].forEach((chapter, index) => {
+                const li = document.createElement("li");
+                const checkbox = document.createElement("input");
+                checkbox.type = "checkbox";
+                checkbox.id = `${subject}-${index}`;
+                checkbox.checked = localStorage.getItem(`${subject}-${index}`) === "true";
+
+                checkbox.addEventListener("change", () => {
+                    localStorage.setItem(`${subject}-${index}`, checkbox.checked);
+                });
+
+                const link = document.createElement("a");
+                link.href = chapter.link;
+                link.textContent = chapter.title;
+                link.target = "_blank"; // Open link in new tab
+
+                li.appendChild(checkbox);
+                li.appendChild(link);
+                list.appendChild(li);
+            });
+        }
+
+        // Render chapters for each subject
+        renderChapters("physics", "physics-list");
+        renderChapters("chemistry", "chemistry-list");
+        renderChapters("mathematics", "mathematics-list");
+    </script>
+</body>
+</html>
